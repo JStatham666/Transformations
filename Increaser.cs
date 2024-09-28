@@ -7,12 +7,12 @@ public class Increaser : MonoBehaviour
 
     private Vector3 initialScale;
 
-    void Start()
+    private void Start()
     {
         initialScale = transform.localScale;
     }
 
-    void Update()
+    private void Update()
     {
         transform.localScale = Vector3.Lerp(transform.localScale, initialScale * _targetScale, _scaleSpeed * Time.deltaTime);
     }
